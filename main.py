@@ -39,7 +39,7 @@ def run_bot(reddit, comments_replied_to):
     for comment in subreddits.comments():
         for keyword in keywords:
             if keyword in comment.body and comment.id not in comments_replied_to: 
-            #and comment.author != reddit.user.me():
+            # and comment.author != reddit.user.me():
                 reply_text = "There is " + str(years) + " years and " + str(days) + " days to limit global warming to 1.5 degrees Celcius"
                 comment.reply(body = reply_text)
                 comments_replied_to.append(comment.id)
