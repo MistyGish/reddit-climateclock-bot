@@ -1,0 +1,4 @@
+*.txt
+tokens.py
+*.pyc
+__pycache__
